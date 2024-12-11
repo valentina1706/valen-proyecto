@@ -1,17 +1,24 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { InicioSesionComponent } from './inicio-sesion/inicio-sesion.component';
+import { IniciosesionComponent } from './inicio-sesion/inicio-sesion.component';
 import { RegistroComponent } from './registro/registro.component';
 
+//importaciones del inicio
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
-    InicioSesionComponent,
+    IniciosesionComponent,
     RegistroComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatIconModule
   ]
 })
 export class PagesModule { }
